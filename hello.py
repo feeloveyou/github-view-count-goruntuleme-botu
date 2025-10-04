@@ -42,7 +42,7 @@ def run_refresher(url, interval):
             try:
                 time.sleep(interval)
                 driver.refresh()
-                print(f"[{time.strftime('%H:%M:%S')}] Sayfa yenilendi.")
+                print(f"[{time.strftime('%H:%M:%S')}] Refreshed.")
             except TimeoutException:
                 print("[!] try again")
                 try:
